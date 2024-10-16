@@ -14,9 +14,10 @@ async function handleImageUpload() {
             if (detections.length > 0) {
                 detections.forEach(detection => {
                     const gender = detection.gender;
-
-                    console.log("Пол:", gender);
+                    console.log("Gender:", gender);
                 });
+            } else {
+                console.log("No faces detected");
             }
 }
 
