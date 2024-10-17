@@ -1,8 +1,7 @@
 
-
 async function loadModels() {
-    await faceapi.nets.tinyFaceDetector.loadFromUri("C:/Users/Anton/Desktop/ANTEI - projects/face-detector-app/models");
-    await faceapi.nets.ageGenderNet.loadFromUri("C:/Users/Anton/Desktop/ANTEI - projects/face-detector-app/models");
+    await faceapi.nets.tinyFaceDetector.loadFromUri("models");
+    await faceapi.nets.ageGenderNet.loadFromUri("models");
 }
 
 async function handleImageUpload() {
